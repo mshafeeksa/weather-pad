@@ -1,0 +1,13 @@
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+    
+    
+    npm install webpack webpack-cli --save-dev
+    
+    npm install --save-dev style-loader css-loader
+    
+    npm install --save-dev jest
+    
+    npm install --save-dev babel-jest @babel/core @babel/preset-env
