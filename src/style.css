@@ -20,6 +20,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .main{
@@ -212,4 +213,59 @@ footer{
 }
 .night-search{
     background-image: url("./icons/search-white.svg");
+}
+
+.hide{
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.loading{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 3rem;
+}
+
+#l{
+    animation: loading-animation 2.5s linear 0s infinite;
+}
+#o{
+    animation: loading-animation 2.5s linear 0.25s infinite;
+}
+#a{
+    animation: loading-animation 2.5s linear 0.5s infinite;
+}
+#d{
+    animation: loading-animation 2.5s linear 0.75s infinite;
+}
+#i{
+    animation: loading-animation 2.5s linear 1s infinite;
+}
+#n{
+    animation: loading-animation 2.5s linear 1.25s infinite;
+}
+#g{
+    animation: loading-animation 2.5s linear 1.5s infinite;
+}
+#d1{
+    animation: loading-animation 2.5s linear 1.75s infinite;
+}
+#d2{
+    animation: loading-animation 2.5s linear 2s infinite;
+}
+#d3{
+    animation: loading-animation 2.5s linear 2.25s infinite;
+}
+
+
+@keyframes loading-animation {
+    0%{
+        color: red;
+    }
+    30%{
+        color: white;
+    }
 }

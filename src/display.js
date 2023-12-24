@@ -22,3 +22,15 @@ export function displayPage(data) {
     time.textContent = data.localTime;
     setDayNightIcons(data.isDay);  
 }
+export function displayLoading() {
+    const main = document.querySelector(".main");
+    main.classList.add("hide");
+    const loading = document.querySelector(".loading");
+    loading.classList.remove("hide");
+}
+export function endLoading() {
+    const main = document.querySelector(".main");
+    main.classList.remove("hide");
+    const loading = document.querySelector(".loading");
+    loading.classList.add("hide");    
+}
