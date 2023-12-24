@@ -3,10 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./main.js"></script>
+    <title>WeatherPad</title>
+    <script src="./main.js" defer></script>
 </head>
 <body>
-    
+    <div class="main">
+        <div class="search-container">
+            <div class="search-box">
+                <form action="#">
+                    <input type="text" name="location" id="location" placeholder="Enter location">
+                    <input type="submit" id="search-icon" value="">
+                </form>
+            </div>
+        </div>
+        <div class="top-container">
+            <div class="location-container">
+                <div class="location-box box">
+                    <img src="" alt="location" class="icon">
+                    <div class="container-right">
+                        <div class="location-name"></div>
+                        <div class="location-details"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cloud-container">
+                <div class="cloud-box box">
+                    <img src="" alt="cloud" class="icon">
+                    <div class="container-right"></div>
+                </div>
+            </div>
+            <div class="temperature-container">
+                <div class="temperature-box">
+                    <div class="main-temperature-box">
+                        <div class="value"></div>
+                        <div class="degree">&deg;</div>
+                        <div class="unit">c</div>
+                    </div>
+                    <div class="feels-like-box"></div>
+                </div>
+            </div>
+            <div class="date-time-container">
+                <div class="time-box box">
+                    <img src="" alt="time" class="icon">
+                    <div class="container-right">
+                        <div class="text">Local Time:</div>
+                        <div class="time"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="wind-container">
+                <div class="box">
+                    <img src="" alt="wind" class="icon">
+                    <div class="container-right">
+                        <div class="wind"><span class="bold">Wind:</span> <span class="wind-speed"></span></div>
+                        <div class="gust"><span class="bold">Gust:</span> <span class="gust-value"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humidity-container">
+                <div class="box">
+                    <img src="" alt="humidity" class="icon">
+                        <div class="container-right">
+                            <div class="humidity"><span class="bold">Humidity: </span> <span class="humidity-value"></span></div>
+                        </div>
+                </div>
+            </div>
+            <div class="rain-container">
+                <div class="box">
+                    <img src="" alt="rain" class="icon">
+                    <div class="container-right">
+                        <div class="rain"><span class="bold">Precipitation: </span> <span class="precipitation-value"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        by Mohammed Shafeek, 2023
+    </footer>
 </body>
 </html>
